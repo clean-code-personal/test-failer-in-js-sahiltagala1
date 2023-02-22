@@ -5,7 +5,12 @@ function networkAlertStub(celcius) {
     // Return 200 for ok
     // Return 500 for not-ok
     // stub always succeeds and returns 200
-    return 200;
+    //return 200;
+    if(celcius <= 200){
+        return 200;
+    } else {
+        return 500;
+    }
 }
 
 function alertInCelcius(farenheit) {
@@ -19,6 +24,8 @@ function alertInCelcius(farenheit) {
         alertFailureCount += 0;
     }
 }
+
+alertInCelcius(500.7);
 
 alertInCelcius(400.5);
 alertInCelcius(303.6);
