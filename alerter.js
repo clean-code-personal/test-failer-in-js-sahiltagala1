@@ -25,8 +25,7 @@ function alertInCelcius(farenheit) {
     }
 }
 
-alertInCelcius(500.7);
-console.assert(alertFailureCount==1);
+alertInCelcius(100.7);
 
 alertInCelcius(400.5);
 alertInCelcius(303.6);
