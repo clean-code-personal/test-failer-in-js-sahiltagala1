@@ -1,19 +1,21 @@
-const {expect} = require('chai')
-
-function print_color_map() {
-    const majorColors = ["White", "Red", "Black", "Yellow", "Violet"];
-    const minorColors = ["Blue", "Orange", "Green", "Brown", "Slate"];
-    for (let i = 0; i < majorColors.length; i++) {
-        for (let j = 0; j < minorColors.length; j++) {
-            console.log(`${i * 5 + j} | ${majorColors[i]} | ${minorColors[j]}`);
-        }
-    }
-    return majorColors.length * minorColors.length;
+function print_color(i, j){
+    console.log(`${i * 5 + j} | ${majorColors[i]} | ${minorColors[j]}`);
 }
 
-result = print_color_map();
+function print_color_map() {
+  const majorColors = ["White", "Red", "Black", "Yellow", "Violet"];
+  const minorColors = ["Blue", "Orange", "Green", "Brown", "Slate"];
+  for (let i = 0; i < majorColors.length; i++) {
+    for (let j = 0; j < minorColors.length; j++) {
+      print_color(i,j);
+    }
+  }
+  return majorColors.length * minorColors.length;
+}
 
-expect(result).equals(5);
-
-expect(result).equals(25);
-console.log('All is well (maybe!)');
+module.exports = new func_print();
+function func_print(){
+    return{
+        print_color_map:print_color_map
+    }
+}
