@@ -1,6 +1,6 @@
 const{assert} = require("chai");
-const alertFailerCount = require("./alerter");
-const func = require("./alerter");
+const alertFailerCount = require("../alerter/alerter");
+const func = require("../alerter/alerter");
 
 func.alertInCelcius(400.5);
 func.alertInCelcius(303.6);
