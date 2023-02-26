@@ -1,5 +1,3 @@
-const {expect} = require('chai');
-
 function size(cms) {
     if (cms < 38) {
         return 'S';
@@ -10,10 +8,9 @@ function size(cms) {
     }
 }
 
-expect(size(38)).equals('M');
-
-
-expect(size(37)).equals('S');
-expect(size(40)).equals('M');
-expect(size(43)).equals('L');
-console.log('All is well (maybe!)');
+module.exports = new export_file_tshirt();
+function export_file_tshirt(){
+    return{
+        size:size
+    }
+}
