@@ -1,6 +1,10 @@
-expect(size(38)).equals("M");
+const { expect } = require("chai");
+const func_tshirt = require("./tshirt")
 
-expect(size(37)).equals("S");
-expect(size(40)).equals("M");
-expect(size(43)).equals("L");
+expect(func_tshirt.size(38)).equals("M");
+
+
+expect(func_tshirt.size(37)).equals("S");
+expect(func_tshirt.size(40)).equals("M");
+expect(func_tshirt.size(43)).equals("L");
 console.log("All is well (maybe!)");
