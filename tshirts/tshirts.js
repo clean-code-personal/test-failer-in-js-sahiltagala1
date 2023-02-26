@@ -8,9 +8,4 @@ function size(cms) {
     }
 }
 
-module.exports = new export_file_tshirt();
-function export_file_tshirt(){
-    return{
-        size:size
-    }
-}
+module.exports = {size};

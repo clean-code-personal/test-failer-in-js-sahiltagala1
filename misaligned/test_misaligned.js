@@ -1,7 +1,7 @@
 const { expect } = require("chai");
-const func_print = require("./misaligned");
+const func = require("./misaligned");
 
-result = func_print.print_color_map();
+result = func.print_color_map();
 
 expect(result).equals(5);
 

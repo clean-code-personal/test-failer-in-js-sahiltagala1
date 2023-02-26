@@ -1,12 +1,11 @@
 const{assert} = require("chai");
-const{alertFailerCount} = require("./alerter");
-const func_alert = require("./alerter");
+const alertFailerCount = require("./alerter");
+const func = require("./alerter");
 
-func_alert.alertInCelcius(400.5);
-func_alert.alertInCelcius(303.6);
-console.log(`${func_alert.alertFailureCount} alerts failed.`);
+func.alertInCelcius(400.5);
+func.alertInCelcius(303.6);
+console.log(`${alertFailerCount} alerts failed.`);
 console.log("All is well (maybe!)");
 console.assert(alertFailerCount);
 
-assert(alertFailerCount);
-
+assert.equal(alertFailerCount,1);

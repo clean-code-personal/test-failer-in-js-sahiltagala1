@@ -13,9 +13,4 @@ function print_color_map() {
   return majorColors.length * minorColors.length;
 }
 
-module.exports = new func_print();
-function func_print(){
-    return{
-        print_color_map:print_color_map
-    }
-}
+module.exports = {print_color_map};
