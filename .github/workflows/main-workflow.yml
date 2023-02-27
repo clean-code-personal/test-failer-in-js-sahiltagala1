@@ -20,7 +20,7 @@ jobs:
         run: bash .github/workflows/expectfail.sh "npx mocha test/test_tshirts.js"
 
       - name: misaligned fail
-        run: bash .github/workflows/expectfail.sh "node test/test_misaligned.js"
+        run: bash .github/workflows/expectfail.sh "npx mocha test/test_misaligned.js"
 
       - name: alerter fail
-        run: bash .github/workflows/expectfail.sh "node test/test_alerter.js"
+        run: bash .github/workflows/expectfail.sh "npx mocha test/test_alerter.js"
