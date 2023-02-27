@@ -1,8 +1,7 @@
-let alertFailureCount = 0;
-
 const { assert } = require("chai");
 const { it } = require("mocha");
 const func = require("../alerter/alerter");
+let {alertFailureCount} = require("../alerter/alerter")
 
 func.alertInCelcius(400.5);
 func.alertInCelcius(303.6);
