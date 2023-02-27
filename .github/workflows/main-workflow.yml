@@ -17,10 +17,10 @@ jobs:
         run:  sudo npm install
       
       - name: tshirts fail
-        run: bash .github/workflows/expectfail.sh "npx mocha test/test_tshirts.js"
+        run: "npx mocha test/test_tshirts.js"
 
       - name: misaligned fail
-        run: bash .github/workflows/expectfail.sh "npx mocha test/test_misaligned.js"
+        run: "npx mocha test/test_misaligned.js"
 
       - name: alerter fail
-        run: bash .github/workflows/expectfail.sh "npx mocha test/test_alerter.js"
+        run: "npx mocha test/test_alerter.js"

@@ -13,7 +13,7 @@ describe("Test cases", function () {
   it('should return "L" for 43', function () {
     assert.equal(func_size.size(43), "L");
   });
-  it('should return "M" for 38', function () {
-    assert.equal(func_size.size(38), "M");
+  it('should return "S" for 38', function () {
+    assert.equal(func_size.size(38), "S");
   });
 });

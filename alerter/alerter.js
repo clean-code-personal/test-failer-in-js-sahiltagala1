@@ -13,7 +13,7 @@ function alertInCelcius(farenheit) {
   const celcius = ((farenheit - 32) * 5) / 9;
   const returnCode = networkAlertStub(celcius);
   if (returnCode != 200) {
-    alertFailureCount += 0;
+    alertFailureCount += 1;
   }
 }
 
