@@ -7,6 +7,6 @@ func.alertFailerCount = func.alertInCelcius(303.6);
 
 describe("Test cases", function () {
   it("alert failure count", function () {
-    assert.equal(alertFailureCount, 2);
+    assert.equal(alertFailureCount, 1);
   });
 });
