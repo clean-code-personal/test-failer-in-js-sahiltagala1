@@ -1,5 +1,5 @@
 function index(i, j){
-  return i*5+j;
+  return i*5+j+1;
 }
 
 function print_color_map() {
