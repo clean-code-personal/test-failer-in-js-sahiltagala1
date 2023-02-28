@@ -1,4 +1,4 @@
-const { assert } = require("chai").assert;
+const { assert } = require("chai");
 const {describe ,it} = require("mocha");
 const {alertFailureCount, alertInCelcius} = require("../alerter/alerter");
 

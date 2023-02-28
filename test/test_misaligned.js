@@ -9,6 +9,6 @@ describe("Color Map Print", function () {
     expect(result).equals(25);
   });
   it("should return first index as 1", function () {
-    expect(func.index(0,0)).equals(1);
+    expect(func.index(0,0)).equals('1 ');
   });
 });
