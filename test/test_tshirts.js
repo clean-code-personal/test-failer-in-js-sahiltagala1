@@ -3,7 +3,7 @@ const { it } = require("mocha");
 
 let func_size = require("../tshirts/tshirts");
 
-describe("Test cases", function () {
+describe("Test cases for tshirt sizes", function () {
   it('should return "S" for 37', function () {
     assert.equal(func_size.size(37), "S");
   });

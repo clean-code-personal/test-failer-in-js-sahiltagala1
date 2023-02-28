@@ -1,5 +1,4 @@
 let alertFailureCount = 0;
-module.exports = {alertFailureCount}
 function networkAlertStub(celcius) {
   console.log(`Alert! Temperature is ${celcius} degrees`);
     if (celcius < 200) {
@@ -17,4 +16,4 @@ function alertInCelcius(farenheit) {
   }
 }
 
-module.exports = {alertInCelcius};
+module.exports = {alertInCelcius, alertFailureCount};

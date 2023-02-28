@@ -16,11 +16,5 @@ jobs:
       - name: Install Dependncies
         run:  sudo npm install
       
-      - name: tshirts fail
-        run: "npx mocha test/test_tshirts.js"
-
-      - name: misaligned fail
-        run: "npx mocha test/test_misaligned.js"
-
-      - name: alerter fail
-        run: "npx mocha test/test_alerter.js"
+      - name: Run and test
+        run: "npx mocha"

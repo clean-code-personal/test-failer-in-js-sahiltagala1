@@ -1,13 +1,11 @@
-const { assert } = require("chai");
-const { it } = require("mocha");
-const func = require("../alerter/alerter");
-let {alertFailureCount} = require("../alerter/alerter")
-
-func.alertInCelcius(400.5);
-func.alertInCelcius(303.6);
+const { assert } = require("chai").assert;
+const {describe ,it} = require("mocha");
+const {alertFailureCount, alertInCelcius} = require("../alerter/alerter");
 
 describe("Test cases", function () {
   it("alert failure count", function () {
-    assert.equal(alertFailureCount, 1);
+    alertInCelcius(400.5);
+    alertInCelcius(303.6);
+    assert.equal(alertFailureCount,1);
   });
 });
