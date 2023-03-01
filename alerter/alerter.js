@@ -16,4 +16,8 @@ function alertInCelcius(farenheit) {
   }
 }
 
-module.exports = {alertInCelcius, alertFailureCount};
+function fatchAlertFailerCounter(){
+  return alertFailureCount;
+}
+
+module.exports = { alertInCelcius, fatchAlertFailerCounter };
